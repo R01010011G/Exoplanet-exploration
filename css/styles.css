@@ -1,20 +1,31 @@
-.menu li {
-    color: rgb(0, 0, 0);
-}
+body {
+    width: 100%;
+    height: auto;
+    background-color: #0A0731;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: left;
+  }
 
-.menu li:hover {
+  .menu li {
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0); 
-}
+    background-color: rgb(255, 255, 255); 
+    padding: 35px;
+  }
 
-.menu .submenu {
+  .menu .submenu {
     display: none;
     position: absolute;
     background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
+    border: 5px solid #ccc;
+    padding: 15px;
+    top: 100px;
+    left: 0px;
+  }
 
-.menu li:hover .submenu {
+  .menu li:hover .submenu {
     display: block;
-}
+  }
