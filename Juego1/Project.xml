@@ -19,6 +19,7 @@
 
 	<!--HTML5-specific-->
 	<window if="html5" resizable="true" />
+	<window if="web"		orientation="portrait"  />
 
 	<!--Desktop-specific-->
 
