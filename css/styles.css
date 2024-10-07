@@ -1,0 +1,20 @@
+.menu li {
+    color: rgb(0, 0, 0);
+}
+
+.menu li:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0); 
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
