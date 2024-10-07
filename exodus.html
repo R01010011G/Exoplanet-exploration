@@ -22,6 +22,17 @@
     <title>Exodus</title>
 
     <style>
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .menu li {
+        list-style: none;
+      }
+
       .menu .submenu {
         display: none;
         position: absolute;
@@ -35,50 +46,77 @@
       }
 
       .audio-button {
-            border: none;
-            background: none;
-            cursor: pointer;
-            width: 30px;
-            margin-left: 1300px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+
+      .audio-button img {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .menu {
+          flex-direction: column;
+          align-items: flex-start;
         }
-        .audio-button img {
-            width: 30px;
-            height: 30px;
+
+        .audio-button {
+          margin-left: 0; /* Align button below text on smaller screens */
         }
-        
+
+        .exoplanetas {
+          width: 100%; /* Ensure image scales down on smaller screens */
+          height: auto;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .menu {
+          flex-direction: row;
+        }
+
+        .exoplanetas {
+          width: 100%;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="menu">
       <li style="color: rgb(255, 255, 255);">
-            <a href="exodus.html">
-              English
-            </a>
-            <button class="audio-button" onclick="playAudio()">
-              <img src="img/exo/audio.png" alt="audio">
-          </button>
-          <audio id="audio" src="./audio/INGLES - VALERIA.mp3"></audio>      
-          <div class="submenu">
-                <!-- el contenido del menu -->
-                <ul>
-                    <li><a href="./exodustraducion/exodusEspanol.html">Español</a></li>
-                    <li><a href="./exodustraducion/exodusFrancais.html">Francais</a></li>
-                    <li><a href="./exodustraducion/exodusDeutsch.html">Deutsch</a></li>
-                    <li><a href="./exodustraducion/exodusItaliano.html">Italiano</a></li>
-                    <li><a href="./exodustraducion/exodusGuarani.html">Guarani</a></li>
-                </ul>
-            </div>
-        </li>
+        <a href="exodus.html">
+          English
+        </a>
+        <button class="audio-button" onclick="playAudio()">
+          <img src="img/exo/audio.png" alt="audio">
+        </button>
+        <audio id="audio" src="./audio/INGLES - VALERIA.mp3"></audio>      
+        <div class="submenu">
+          <!-- Menu content -->
+          <ul>
+            <li><a href="./exodustraducion/exodusEspanol.html">Español</a></li>
+            <li><a href="./exodustraducion/exodusFrancais.html">Francais</a></li>
+            <li><a href="./exodustraducion/exodusDeutsch.html">Deutsch</a></li>
+            <li><a href="./exodustraducion/exodusItaliano.html">Italiano</a></li>
+            <li><a href="./exodustraducion/exodusGuarani.html">Guarani</a></li>
+          </ul>
+        </div>
+      </li>
     </div>
 
-    <img class="exoplanetas" src="img/exo/exoplanetas.png" alt="" width="1535" height="645">
+    <img class="exoplanetas" src="img/exo/exoplanetas.png" alt="exoplanetas">
 
     <script>
       function playAudio() {
-          var audio = document.getElementById('audio');
-          audio.play();
+        var audio = document.getElementById('audio');
+        audio.play();
       }
-  </script>
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

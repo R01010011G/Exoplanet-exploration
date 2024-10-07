@@ -22,6 +22,17 @@
     <title>Exodus</title>
 
     <style>
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .menu li {
+        list-style: none;
+      }
+
       .menu .submenu {
         display: none;
         position: absolute;
@@ -35,55 +46,82 @@
       }
 
       .audio-button {
-            border: none;
-            background: none;
-            cursor: pointer;
-            width: 30px;
-            margin-left: 1290px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+
+      .audio-button img {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .menu {
+          flex-direction: column;
+          align-items: flex-start;
         }
-        .audio-button img {
-            width: 30px;
-            height: 30px;
+
+        .audio-button {
+          margin-left: 0; /* Align button below text on smaller screens */
         }
-        
+
+        .exoplanetas {
+          width: 100%; /* Ensure image scales down on smaller screens */
+          height: auto;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .menu {
+          flex-direction: row;
+        }
+
+        .exoplanetas {
+          width: 100%;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="menu">
       <li style="color: rgb(255, 255, 255);">
-            <a href="exodusEspanol.html">
-              Español
-            </a>
-            <button class="audio-button" onclick="playAudio()">
-              <img src="../img/exo/audio.png" alt="audio">
-          </button>
-          <audio id="audio" src="../audio/ESPAÑOL - JUAN PABLO.mp3"></audio>      
-          <div class="submenu">
-                <!-- el contenido del menu -->
-                <ul>
-                    <li><a href="../exodus.html">English</a></li>
-                    <li><a href="exodusFrancais.html">Francais</a></li>
-                    <li><a href="exodusDeutsch.html">Deutsch</a></li>
-                    <li><a href="exodusItaliano.html">Italiano</a></li>
-                    <li><a href="exodusGuarani.html">Guarani</a></li>
-                </ul>
-            </div>
-        </li>
+        <a href="exodusEspanol.html">
+          Español
+        </a>
+        <button class="audio-button" onclick="playAudio()">
+          <img src="../img/exo/audio.png" alt="audio">
+        </button>
+        <audio id="audio" src="../audio/ESPAÑOL - JUAN PABLO.mp3"></audio>      
+        <div class="submenu">
+          <!-- Menu content -->
+          <ul>
+            <li><a href="../exodus.html">English</a></li>
+            <li><a href="exodusFrancais.html">Francais</a></li>
+            <li><a href="exodusDeutsch.html">Deutsch</a></li>
+            <li><a href="exodusItaliano.html">Italiano</a></li>
+            <li><a href="exodusGuarani.html">Guarani</a></li>
+          </ul>
+        </div>
+      </li>
     </div>
 
-    <img class="exoplanetas" src="../img/exo/exoplanetas.png" alt="" width="1535" height="645">
+    <img class="exoplanetas" src="../img/exo/exoplanetas.png" alt="exoplanetas">
 
     <script>
       function playAudio() {
-          var audio = document.getElementById('audio');
-          audio.play();
+        var audio = document.getElementById('audio');
+        audio.play();
       }
-  </script>
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
