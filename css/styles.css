@@ -1,56 +1,89 @@
-body {
-  width: 100%;
-  height: auto;
-  background-color: #0A0731;
-  font-family: 'Open Sans', sans-serif;
-  color: #555;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: normal;
-  text-align: left;
-}
-
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
-  background-color: #ffffff; 
-  padding: 10px 20px; 
+  padding: 10px;
 }
 
 .menu li {
-  color: rgb(255, 255, 255);
-  padding: 15px 25px;
-  position: relative; 
+  list-style: none;
+  position: relative; /* Needed for submenu positioning */
+}
+
+.menu a {
+  color: #56DCBD; /* Change link color */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Add padding for better click area */
+}
+
+.menu a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  background-color: rgba(10, 7, 49, 0.1); /* Optional: add a hover effect */
 }
 
 .menu .submenu {
   display: none;
   position: absolute;
   background-color: white;
-  border: 5px solid #ccc;
-  padding: 15px;
-  top: 100%;
-  left: 0;
-  z-index: 1000; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000; /* Make sure it appears above other content */
 }
 
 .menu li:hover .submenu {
-  display: block;
+  display: block; /* Show submenu on hover */
 }
 
+.audio-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.audio-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.return-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  margin-left: auto; /* Pushes the button to the right */
+}
+
+.return-button:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .menu {
       flex-direction: column;
-      align-items: flex-start; 
+      align-items: flex-start;
   }
 
-  .menu li {
-      padding: 10px 15px;
+  .audio-button {
+      margin-left: 0; /* Align button below text on smaller screens */
   }
 
-  .menu .submenu {
-      width: 100%; 
+  .exoplanetas {
+      width: 100%; /* Ensure image scales down on smaller screens */
+      height: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu {
+      flex-direction: row;
+  }
+
+  .exoplanetas {
+      width: 100%;
+      height: auto;
   }
 }

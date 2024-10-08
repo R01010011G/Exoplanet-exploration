@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +28,7 @@
         align-items: center;
         padding: 10px;
       }
-      
+
       .menu li {
         list-style: none;
       }
@@ -55,6 +55,20 @@
       .audio-button img {
         width: 30px;
         height: 30px;
+      }
+
+      .return-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0A0731; /* Button color */
+        color: white; /* Text color */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px; /* Rounded corners */
+        margin-left: auto; /* Pushes the button to the right */
+      }
+
+      .return-button:hover {
+        text-decoration: none; /* Remove underline on hover */
       }
 
       /* Responsive Styles */
@@ -85,28 +99,26 @@
         }
       }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="menu">
-      <li style="color: rgb(255, 255, 255);">
-        <a href="exodusFrancais.html">
-          Francais
-        </a>
-        <button class="audio-button" onclick="playAudio()">
-          <img src="../img/exo/audio.png" alt="audio">
-        </button>
-        <audio id="audio" src="../audio/FRANCES - JUAN PABLO.mp3"></audio>      
-        <div class="submenu">
-          <!-- Menu content -->
-          <ul>
-            <li><a href="exodusEspanol.html">Español</a></li>
-            <li><a href="../exodus.html">English</a></li>
-            <li><a href="exodusDeutsch.html">Deutsch</a></li>
-            <li><a href="exodusItaliano.html">Italiano</a></li>
-            <li><a href="exodusGuarani.html">Guarani</a></li>
-          </ul>
-        </div>
-      </li>
+        <li style="color: rgb(255, 255, 255);">
+            <a href="exodusFrancais.html">Francais</a>
+            <button class="audio-button" onclick="playAudio()">
+                <img src="../img/exo/audio.png" alt="audio">
+            </button>
+            <audio id="audio" src="../audio/FRANCES - JUAN PABLO.mp3"></audio>
+            <div class="submenu">
+                <ul>
+                    <li><a href="exodusEspanol.html">Español</a></li>
+                    <li><a href="../exodus.html">English</a></li>
+                    <li><a href="exodusDeutsch.html">Deutsch</a></li>
+                    <li><a href="exodusItaliano.html">Italiano</a></li>
+                    <li><a href="exodusGuarani.html">Guarani</a></li>
+                </ul>
+            </div>
+        </li>
+        <a href="../index.html" class="return-button">Return</a>
     </div>
 
     <img class="exoplanetas" src="../img/exo/exoplanetas.png" alt="exoplanetas">
@@ -119,9 +131,8 @@
     </script>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>

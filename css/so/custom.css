@@ -77,6 +77,14 @@ button {
     max-width: 80px;
 }
 
+#banner h1 {
+    z-index: 2; /* Ensure heading is above other content */
+}
+
+#banner p {
+    z-index: 2; /* Ensure paragraph is above other content */
+}
+
 /********** feature (skew background) **********/
 .feature img {
     width: 100%;
@@ -85,10 +93,14 @@ button {
 
 #feature-first {
     background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    position: relative; /* Ensure positioning context */
+    z-index: 1; /* Default stacking context */
 }
 
 #feature-last {
     background: #00FFAD;
+    position: relative; /* Ensure positioning context */
+    z-index: 1; /* Default stacking context */
 }
 
 /********** price table **********/
@@ -159,4 +171,16 @@ button {
     #banner h1 {
         font-size: 3.6rem;
     }
+
+    #banner p {
+        font-size: 1.2rem; /* Adjust paragraph font size for smaller screens */
+    }
+
+    .feature img {
+        max-width: 100%; /* Ensure feature images are responsive */
+    }
+}
+
+@media (min-width: 576px) {
+    /* Additional styles for larger screens can be added here */
 }
