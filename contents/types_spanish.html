@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tipos de Exoplanetas</title>
+    <meta name="description" content="Explorando diferentes tipos de exoplanetas">
+    <link rel="icon" href="img/logo.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/so/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/so/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/so/aos.css">
+    <link rel="stylesheet" href="css/styles2.css"> <!-- Enlace a tus estilos responsivos -->
+    <style>
+        /* Estilos personalizados para centrar los bloques */
+        .centered-blocks {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permitir envoltura en pantallas más pequeñas */
+        }
+
+        /* Estilos del título */
+        .exoplanet-title, .section-title {
+            color: #430B50; /* Color del título */
+            font-family: inherit; /* Coincidir fuente con la página de índice */
+        }
+
+        /* Estilos del subtítulo */
+        .exoplanet-subtitle {
+            color: #430B50; /* Color del subtítulo (títulos de métodos) */
+            font-family: inherit; /* Coincidir fuente con la página de índice */
+        }
+
+        /* Estilos de la descripción */
+        .exoplanet-description, .section-description {
+            color: #7B7EB7; /* Color del texto de la descripción */
+            font-family: inherit; /* Coincidir fuente con la página de índice */
+        }
+
+        /* Personalizaciones de botones */
+        .atlas-cta {
+            background-color: #0A0731;
+            color: #ffffff;
+        }
+
+        .atlas-cta:hover {
+            background-color: #307277;
+            color: #ffffff;
+        }
+
+        /* Cambio de color de fondo del triángulo */
+        #feature-first {
+            background: linear-gradient(168deg, #ffffff 55%, #0A0731 0); /* Cambiar triángulo a #0A0731 */
+        }
+
+        /* Ocultar imagen y ajustar área de texto */
+        #feature-last img {
+            display: none; /* Ocultar la imagen en la parte inferior izquierda */
+        }
+
+        .history-text {
+            color: #ffffff; /* Color del texto */
+            font-family: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/IMG_3211.PNG);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-2">
+                        <img src="img/logo.png" alt="logo" class="img-fluid"> <!-- Usar img-fluid para responsividad -->
+                    </div>
+                    <div class="col-12 col-md-6 text-right">
+                    </div>
+                </div>
+            </header>
+            <h1 class="display-3 text-white font-weight-bold my-5">
+                Tipos de Exoplanetas
+            </h1>
+            <p class="lead text-white my-4">
+                En esta sección, exploraremos los diversos tipos de exoplanetas que se han descubierto, desde gigantes gaseosos hasta mundos rocosos. 
+                Discutiremos sus características, formación y potencial para albergar vida.
+            </p>
+        </div>
+    </div>
+
+    <!-- Tipos de Exoplanetas -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5 exoplanet-title">Categorías de Exoplanetas</h2>
+        <div class="row centered-blocks"> <!-- Usar la clase personalizada para centrar -->
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Gigantes Gaseosos</h4>
+                <p class="exoplanet-description">Grandes planetas compuestos principalmente de hidrógeno y helio, similares a Júpiter y Saturno.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Super-Terrestres</h4>
+                <p class="exoplanet-description">Planetas rocosos más grandes que la Tierra pero más pequeños que los gigantes gaseosos, con potencial para climas diversos.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Similares a Neptuno</h4>
+                <p class="exoplanet-description">Planetas similares a Neptuno, con atmósferas gruesas de hidrógeno y helio, a menudo helados.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Planetas Terrestres</h4>
+                <p class="exoplanet-description">Planetas rocosos similares a la Tierra, que potencialmente tienen superficies sólidas y atmósferas.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Júpiter Calientes</h4>
+                <p class="exoplanet-description">Gigantes gaseosos que orbitan muy cerca de sus estrellas, lo que resulta en altas temperaturas superficiales.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature (Echa un vistazo dentro de la sección) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div class="col-md-6">
+                    <h2 class="font-weight-bold section-title">Echa un vistazo</h2>
+                    <p class="my-4 section-description">Explora nuestra colección de audios y medios para profundizar en los tipos de exoplanetas.</p>
+                    <a href="exodus.html" class="btn my-4 font-weight-bold atlas-cta">Aprender Más</a> <!-- El botón enlaza a exodus.html -->
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img src="img/exo/exoplanetas.png" alt="Echa un vistazo dentro" class="mx-auto d-block img-fluid"> <!-- Usar img-fluid para responsividad -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Resumen -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last" style="background-color: #0A0731;"> <!-- Cambió el color de fondo -->
+        <div class="container">
+            <div class="row justify-content-between text-center text-md-left">
+                <div class="col-md-12">
+                    <h2 class="font-weight-bold section-title text-white">Tipos de Exoplanetas</h2>
+                    <p class="my-4 history-text">
+                        Comprender los diferentes tipos de exoplanetas ayuda a los científicos en su búsqueda de mundos potencialmente habitables. 
+                        Cada tipo de exoplaneta ofrece información única sobre la formación planetaria y las posibilidades de vida más allá de la Tierra.
+                    </p>
+                    <p class="my-4 history-text">
+                        Los avances continuos en tecnología mejorarán nuestra capacidad para descubrir y estudiar estos mundos distantes, 
+                        revelando más sobre sus atmósferas, composiciones y potencial para la vida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tipi di Esopianeti</title>
+    <meta name="description" content="Esplorazione dei diversi tipi di esopianeti">
+    <link rel="icon" href="img/logo.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/so/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/so/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/so/aos.css">
+    <link rel="stylesheet" href="css/styles2.css"> <!-- Link ai tuoi stili responsivi -->
+    <style>
+        /* Stili personalizzati per centrare i blocchi */
+        .centered-blocks {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permetti la distribuzione su schermi più piccoli */
+        }
+
+        /* Stili del titolo */
+        .exoplanet-title, .section-title {
+            color: #430B50; /* Colore del titolo */
+            font-family: inherit; /* Abbinare il carattere con la pagina indice */
+        }
+
+        /* Stili del sottotitolo */
+        .exoplanet-subtitle {
+            color: #430B50; /* Colore del sottotitolo (titoli dei metodi) */
+            font-family: inherit; /* Abbinare il carattere con la pagina indice */
+        }
+
+        /* Stili della descrizione */
+        .exoplanet-description, .section-description {
+            color: #7B7EB7; /* Colore del testo della descrizione */
+            font-family: inherit; /* Abbinare il carattere con la pagina indice */
+        }
+
+        /* Personalizzazioni dei pulsanti */
+        .atlas-cta {
+            background-color: #0A0731;
+            color: #ffffff;
+        }
+
+        .atlas-cta:hover {
+            background-color: #307277;
+            color: #ffffff;
+        }
+
+        /* Cambiamento del colore di sfondo del triangolo */
+        #feature-first {
+            background: linear-gradient(168deg, #ffffff 55%, #0A0731 0); /* Cambia il triangolo in #0A0731 */
+        }
+
+        /* Rimuovi l'immagine e adatta l'area del testo */
+        #feature-last img {
+            display: none; /* Nascondi l'immagine in basso a sinistra */
+        }
+
+        .history-text {
+            color: #ffffff; /* Colore del testo */
+            font-family: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/IMG_3211.PNG);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-2">
+                        <img src="img/logo.png" alt="logo" class="img-fluid"> <!-- Usa img-fluid per la responsività -->
+                    </div>
+                    <div class="col-12 col-md-6 text-right">
+                    </div>
+                </div>
+            </header>
+            <h1 class="display-3 text-white font-weight-bold my-5">
+                Tipi di Esopianeti
+            </h1>
+            <p class="lead text-white my-4">
+                In questa sezione, esploreremo i vari tipi di esopianeti che sono stati scoperti, dai giganti gassosi ai mondi rocciosi.
+                Discuteremo le loro caratteristiche, formazione e potenziale per ospitare vita.
+            </p>
+        </div>
+    </div>
+
+    <!-- Tipi di Esopianeti -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5 exoplanet-title">Categorie di Esopianeti</h2>
+        <div class="row centered-blocks"> <!-- Usa la classe personalizzata per centrare -->
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Giganti Gassosi</h4>
+                <p class="exoplanet-description">Grandi pianeti composti principalmente da idrogeno e elio, simili a Giove e Saturno.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Super-Terre</h4>
+                <p class="exoplanet-description">Pianeti rocciosi più grandi della Terra ma più piccoli dei giganti gassosi, con potenziale per climi diversi.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Simili a Nettuno</h4>
+                <p class="exoplanet-description">Pianeti simili a Nettuno, con atmosfere spesse di idrogeno ed elio, spesso ghiacciati.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Pianeti Terrestri</h4>
+                <p class="exoplanet-description">Pianeti rocciosi simili alla Terra, potenzialmente con superfici solide e atmosfere.</p>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <h4 class="exoplanet-subtitle">Gioviani Caldi</h4>
+                <p class="exoplanet-description">Giganti gassosi che orbitano molto vicino alle loro stelle, con temperature superficiali elevate.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature (Dai un'occhiata dentro sezione) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div class="col-md-6">
+                    <h2 class="font-weight-bold section-title">Dai un'occhiata dentro</h2>
+                    <p class="my-4 section-description">Esplora la nostra collezione di audio e media per approfondire i tipi di esopianeti.</p>
+                    <a href="exodus.html" class="btn my-4 font-weight-bold atlas-cta">Scopri di più</a> <!-- Pulsante che linka a exodus.html -->
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img src="img/exo/exoplanetas.png" alt="Dai un'occhiata dentro" class="mx-auto d-block img-fluid"> <!-- Usa img-fluid per la responsività -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione Riepilogativa -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last" style="background-color: #0A0731;"> <!-- Cambiato colore di sfondo -->
+        <div class="container">
+            <div class="row justify-content-between text-center text-md-left">
+                <div class="col-md-12">
+                    <h2 class="font-weight-bold section-title text-white">Tipi di Esopianeti</h2>
+                    <p class="my-4 history-text">
+                        Comprendere i diversi tipi di esopianeti aiuta gli scienziati nella loro ricerca di mondi potenzialmente abitabili.
+                        Ogni tipo di esopianeta offre approfondimenti unici sulla formazione planetaria e sulle possibilità di vita oltre la Terra.
+                    </p>
+                    <p class="my-4 history-text">
+                        I continui progressi nella tecnologia miglioreranno la nostra capacità di scoprire e studiare questi mondi lontani,
+                        rivelando di più sulle loro atmosfere, composizioni e potenziale per la vita.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
